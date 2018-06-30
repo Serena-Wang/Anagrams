@@ -37,7 +37,7 @@ public class AnagramDictionary {
     private static final int MAX_WORD_LENGTH = 7;
     private Random random = new Random();
     private static final String TAG = "a";
-    private ArrayList<String> wordList = new ArrayList<String>();;
+    private ArrayList<String> wordList = new ArrayList<String>();
     private HashSet<String> wordSet = new HashSet<String>();
     private HashMap<String,List> lettersToWord = new HashMap<String,List>();
     private HashMap<Integer,List> sizeToWords = new HashMap<Integer, List>();
@@ -109,7 +109,7 @@ public class AnagramDictionary {
                 result.add(anagram);
             }
         }
-        Log.d(TAG, "anagrams:"+result.toString());
+       // Log.d(TAG, "anagrams:"+result.toString());
         return result;
     }
 
@@ -127,7 +127,7 @@ public class AnagramDictionary {
                     result.addAll(target);
                 }
             }
-            Log.d(TAG, "1 more angram"+result.toString());
+            //Log.d(TAG, "1 more angram"+result.toString());
         }
         return result;
 
@@ -162,7 +162,7 @@ public class AnagramDictionary {
                 target=wordList.get(i);
             }
         }*/
-        Log.d(TAG, "target:"+target);
+        //Log.d(TAG, "target:"+target);
         return null;
     }
 }
